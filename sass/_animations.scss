@@ -1,0 +1,27 @@
+@keyframes blur {
+    20% {
+        box-shadow: 0 0 2px 1px #E7E7E7;
+    }
+
+    100% {
+        box-shadow: 0 0 20px 1px #E7E7E7;
+    }
+}
+
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    80% {
+        left: -81%;
+    }
+
+    100% {
+        left: -81%;
+    }
+}

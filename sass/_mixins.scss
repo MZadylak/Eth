@@ -1,0 +1,28 @@
+@mixin button {
+    color: $text-color;
+    background: $button-bg;
+    height: 4.6rem;
+    border-radius: 25px;
+    border: none;
+    line-height: 4.6rem;
+    cursor: pointer;
+}
+
+@mixin buttonHover {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    height: 100%;
+    background: linear-gradient(to bottom, $button-bg, $nav-color);
+    border-radius: 25px;
+    transition: .3s bottom;
+    z-index: -1;
+}
+
+@mixin buttonActions {
+    transition: .3s;
+    z-index: 1;
+    overflow: hidden;
+}
